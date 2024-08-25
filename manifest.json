@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT TOC Extension",
+  "version": "1.0",
+  "description": "A Firefox extension to add a Table of Contents (TOC) to ChatGPT.",
+  "content_scripts": [
+    {
+      "matches": ["*://chatgpt.com/*"],
+      "css": ["styles/toc-styles.css"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
